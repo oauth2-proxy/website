@@ -1,0 +1,24 @@
+baseURL: https://www.oauth2-proxy.dev/
+locale: en-US
+title: OAuth2 Proxy
+enableRobotsTXT: true
+
+params:
+  description: A reverse proxy and static file server that provides authentication using OAuth 2.0 and OpenID Connect.
+
+menus:
+  main:
+    - name: Project
+      pageRef: /
+      weight: 10
+    - name: Documentation
+      url: https://oauth2-proxy.github.io/oauth2-proxy
+      weight: 20
+      params:
+        external: true
+    - name: Announcements
+      pageRef: /announcements
+      weight: 30
+    - name: Blog
+      pageRef: /blog
+      weight: 40
