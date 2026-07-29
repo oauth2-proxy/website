@@ -2,7 +2,8 @@
   <section class="page-hero"><p class="eyebrow">OAUTH2 PROXY</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p></section>
   <section class="article-list">
     {{ range .Pages.ByDate.Reverse }}
-      <article class="article-card"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ .Summary }}</p><a class="text-link" href="{{ .RelPermalink }}">Read more <span aria-hidden="true">→</span></a></article>
+      {{ $authorURL := .Params.author_url }}{{ $authorAvatar := .Params.author_avatar }}
+      <article class="article-card"><div class="article-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ with .Params.author }}<span aria-hidden="true">·</span><a class="article-author" href="{{ $authorURL }}"><img src="{{ $authorAvatar }}" alt="" width="24" height="24" loading="lazy">{{ . }}</a>{{ end }}</div><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Plain | truncate 180 }}{{ end }}</p><a class="text-link" href="{{ .RelPermalink }}">Read more <span aria-hidden="true">→</span></a></article>
     {{ end }}
   </section>
 {{ end }}

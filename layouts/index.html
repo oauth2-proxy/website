@@ -1,7 +1,5 @@
 {{ define "main" }}
   <section class="notice-bar">
-    <div><strong>Open source authentication, without application changes.</strong></div>
-    <a href="https://github.com/oauth2-proxy/oauth2-proxy" target="_blank" rel="noreferrer">Explore the project <span aria-hidden="true">→</span></a>
   </section>
 
   <section class="home-hero">
@@ -16,12 +14,6 @@
       </div>
       <div class="illustration-placeholder hero-illustration" role="img" aria-label="Placeholder for OAuth2 Proxy hero illustration">
         <span class="placeholder-tag">HERO ILLUSTRATION PLACEHOLDER</span>
-        <div class="arrow-path arrow-path-one"></div>
-        <div class="arrow-path arrow-path-two"></div>
-        <div class="flow-card flow-user">Users</div>
-        <div class="flow-card flow-provider">Identity<br>provider</div>
-        <div class="flow-proxy"><img src="{{ "images/oauth2-proxy-icon-color.svg" | relURL }}" alt=""><strong>OAuth2<br>Proxy</strong></div>
-        <div class="flow-card flow-app">Your apps</div>
       </div>
     </div>
   </section>
@@ -47,9 +39,6 @@
     </div>
     <div class="illustration-placeholder provider-placeholder" role="img" aria-label="Placeholder for supported identity provider diagram">
       <span class="placeholder-tag">PROVIDER DIAGRAM PLACEHOLDER</span>
-      <div class="provider-line provider-line-one"></div><div class="provider-line provider-line-two"></div><div class="provider-line provider-line-three"></div><div class="provider-line provider-line-four"></div>
-      <div class="provider-card provider-a">OIDC</div><div class="provider-card provider-b">OAuth 2.0</div><div class="provider-card provider-c">LDAP</div><div class="provider-card provider-d">SAML</div>
-      <div class="provider-core"><img src="{{ "images/oauth2-proxy-icon-color.svg" | relURL }}" alt="OAuth2 Proxy"><span>OAuth2<br>Proxy</span></div>
     </div>
     <div class="project-description">
       <img src="{{ "images/oauth2-proxy-icon-color.svg" | relURL }}" alt="">
@@ -57,7 +46,12 @@
     </div>
     <div class="cncf-banner">
       <div class="cncf-member"><img src="{{ "images/cncf-logo.svg" | relURL }}" alt="Cloud Native Computing Foundation"></div>
-      <div class="cncf-donation"><p>OAuth2 Proxy was donated to the CNCF in <strong><a href="https://github.com/cncf/sandbox/issues/397">September of 2025</a></strong>.</p></div>
+      <div class="cncf-donation">
+        <p>
+          Originally created in 2012, OAuth2 Proxy has been around since before Kubernetes & CNCF.
+          In <strong><a href="https://github.com/cncf/sandbox/issues/397">September of 2025</a></strong> it was donated to the CNCF.
+        </p>
+      </div>
     </div>
   </section>
 
