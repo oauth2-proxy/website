@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="2.20 2.95 353.34 353.34"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="authentication.svg"
+   inkscape:version="1.4.4 (1:1.4.4+202605061436+dcaf3e7d9e)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.94014496"
+     inkscape:cx="193.05534"
+     inkscape:cy="232.9428"
+     inkscape:window-width="1133"
+     inkscape:window-height="1392"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5" />
+  <title
+     id="title1">oauth2-proxy-icon-color</title>
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#06ed94}</style>
+  </defs>
+  <path
+     id="path6"
+     style="fill:#6ca8ff;stroke-width:1.06462;fill-opacity:1"
+     d="m 178.87004,56.78151 c -37.16832,3.33e-4 -67.87779,29.005537 -69.99804,66.11338 h -0.002 v 13.72462 h 15 c 0.005,-4.57471 -0.009,-9.15052 0.004,-13.72463 1.68915,-29.1372 25.81002,-51.876901 54.9961,-51.877021 29.18609,1.14e-4 53.30694,22.763251 54.99609,51.900461 l 0.004,13.70119 h 15 v -13.72459 h -0.002 C 246.74794,85.787067 216.03846,56.781868 178.87014,56.78154 Z"
+     sodipodi:nodetypes="cccccccccccccc" />
+  <path
+     d="M179.00205,349.728c-93.69483,0-169.921-76.22687-169.921-169.9217S85.30722,9.88462,179.00205,9.88462c93.69408,0,169.92021,76.22687,169.92021,169.9217S272.69613,349.728,179.00205,349.728Zm0-327.81581c-87.06238,0-157.89338,70.831-157.89338,157.89411s70.831,157.89411,157.89338,157.89411,157.89411-70.831,157.89411-157.89411S266.06442,21.91221,179.00205,21.91221Z"
+     class="cls-1"
+     id="path1" />
+  <rect
+     style="fill:#6ca8ff;stroke-width:1.15563;fill-opacity:1"
+     id="rect5"
+     width="180"
+     height="140"
+     x="88.869995"
+     y="145.16631"
+     ry="21.976744" />
+  <circle
+     style="fill:#1957ba;stroke-width:1.06462;fill-opacity:1"
+     id="path7"
+     cx="178.87"
+     cy="195.42947"
+     r="14.142136" />
+  <path
+     style="fill:#1957ba;stroke-width:1.10183;fill-opacity:1"
+     d="m 163.87,248.10893 h 30 l -10,-42.60318 h -10 z"
+     id="path8"
+     sodipodi:nodetypes="ccccc" />
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>oauth2-proxy-icon-color</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

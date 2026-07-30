@@ -8,6 +8,5 @@
         <a href="{{ .URL }}"{{ with .Params.external }} target="_blank" rel="noreferrer"{{ end }}{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active" aria-current="page"{{ end }}>{{ .Name }}{{ with .Params.external }} <span aria-hidden="true">↗</span>{{ end }}</a>
       {{ end }}
     </nav>
-    <a class="nav-cta" href="https://oauth2-proxy.github.io/oauth2-proxy/" target="_blank" rel="noreferrer">Get started <span aria-hidden="true">→</span></a>
   </div>
 </header>

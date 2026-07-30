@@ -527,18 +527,14 @@ p {
 }
 .feature-icon {
   position: absolute;
-  top: -38px;
-  left: calc(50% - 38px);
-  display: grid;
-  place-items: center;
-  width: 76px;
-  height: 76px;
-  color: #fff;
-  background: var(--blue);
-  border: 6px solid #d9e6ff;
+  top: -44px;
+  left: calc(50% - 44px);
+  width: 88px;
+  height: 88px;
+  display: block;
+  padding: 6px;
+  background: #fff;
   border-radius: 50%;
-  font-size: 30px;
-  font-weight: 500;
 }
 .features-grid p {
   margin: 0;
@@ -822,16 +818,6 @@ p {
   display: block;
   width: min(285px, 100%);
   height: auto;
-}
-.feature-icon {
-  color: var(--blue);
-  background: var(--green);
-  border-color: #d9ffef;
-}
-.features-grid article:nth-child(even) .feature-icon {
-  color: #fff;
-  background: var(--blue);
-  border-color: #dbe9ff;
 }
 .cta-band {
   background: linear-gradient(105deg, var(--blue), var(--green-dark));
