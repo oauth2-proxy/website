@@ -1,5 +1,8 @@
 {{ define "main" }}
   <section class="notice-bar">
+    <span>Community Call every first Wednesday of the month at 1-2pm UTC.</span>
+    <a href="https://meet.google.com/dqw-zngc-xir">Join here.</a>
+    <span class="community-call-local-time" data-community-call-time aria-live="polite"></span>
   </section>
 
   <section class="home-hero">
@@ -56,6 +59,9 @@
   </section>
 
   <section class="key-features">
+    <div class="section-title">
+      <h2>Key features.</h2>
+    </div>
     <div class="features-grid">
       <article><span class="feature-icon">↗</span><p>Authentication for any web application without changing its code</p></article>
       <article><span class="feature-icon">◎</span><p>Supports OAuth 2.0 and OpenID Connect providers</p></article>
@@ -65,4 +71,39 @@
       <article><span class="feature-icon">✓</span><p>Built and maintained in the open by its community</p></article>
     </div>
   </section>
+
+  <script>
+    (() => {
+      const localTime = document.querySelector("[data-community-call-time]");
+      if (!localTime || !Intl.DateTimeFormat) return;
+
+      const firstWednesday = (year, month) => {
+        const date = new Date(Date.UTC(year, month, 1, 13));
+        date.setUTCDate(date.getUTCDate() + ((3 - date.getUTCDay() + 7) % 7));
+        return date;
+      };
+
+      const now = new Date();
+      let start = firstWednesday(now.getUTCFullYear(), now.getUTCMonth());
+      const end = new Date(start.getTime() + 60 * 60 * 1000);
+
+      if (now >= end) {
+        start = firstWednesday(now.getUTCFullYear(), now.getUTCMonth() + 1);
+      }
+
+      const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const formatter = new Intl.DateTimeFormat(undefined, {
+        hour: "numeric",
+        minute: "2-digit",
+        timeZone,
+        timeZoneName: "short",
+      });
+      const localEnd = new Date(start.getTime() + 60 * 60 * 1000);
+      const time = formatter.formatRange
+        ? formatter.formatRange(start, localEnd)
+        : `${formatter.format(start)}-${formatter.format(localEnd)}`;
+
+      localTime.textContent = `Your time: ${time} (${timeZone})`;
+    })();
+  </script>
 {{ end }}

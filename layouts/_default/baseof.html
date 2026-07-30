@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
     <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
-    <link rel="icon" href="{{ "images/oauth2-proxy-icon-color.svg" | relURL }}" type="image/svg+xml">
+    <link rel="icon" href="{{ "images/oauth2-proxy-icon-color.png" | relURL }}" type="image/png">
     {{ with resources.Get "css/site.css" | fingerprint }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ end }}
