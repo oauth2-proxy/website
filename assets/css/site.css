@@ -354,6 +354,78 @@ p {
   font-weight: 700;
   line-height: 1.6;
 }
+.sponsors {
+  padding: 112px max(24px, calc((100% - 1170px) / 2)) 120px;
+  background: linear-gradient(155deg, #eef8ff 0%, #f4fff9 100%);
+}
+.sponsors-inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+.sponsors .section-title h2 {
+  margin-bottom: 18px;
+  line-height: 1.12;
+}
+.sponsors .section-title > p {
+  max-width: 360px;
+  margin: 0;
+  color: #536a89;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+.sponsor-groups {
+  display: grid;
+  gap: 28px;
+}
+.sponsor-group {
+  display: grid;
+  grid-template-columns: 205px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.sponsor-label {
+  margin: 0;
+  color: var(--blue);
+  font: 500 12px "DM Mono", monospace;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  min-height: 142px;
+  padding: 25px 42px;
+  background: #fff;
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(41, 71, 129, 0.09);
+}
+.sponsor-card a {
+  display: block;
+  border-radius: 3px;
+}
+.sponsor-card a:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 5px;
+}
+.sponsor-card img {
+  display: block;
+  width: 148px;
+  height: 92px;
+  object-fit: contain;
+}
+.sponsor-card-former {
+  gap: 64px;
+  border-left-color: var(--blue-light);
+}
+.sponsor-card-former img {
+  width: 100px;
+  height: 80px;
+}
 .page-hero {
   padding: 105px max(24px, calc((100% - 920px) / 2)) 75px;
   color: #fff;
@@ -619,6 +691,13 @@ p {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .sponsors-inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .sponsor-group {
+    grid-template-columns: 180px 1fr;
+  }
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
@@ -644,6 +723,17 @@ p {
   .features-grid {
     grid-template-columns: 1fr;
     gap: 60px;
+  }
+  .sponsors {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
+  .sponsor-group {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .sponsor-card {
+    min-height: 120px;
   }
   .footer-links {
     flex-wrap: wrap;

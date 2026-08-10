@@ -75,6 +75,36 @@
     </div>
   </section>
 
+  <section class="sponsors" aria-labelledby="sponsors-title">
+    <div class="sponsors-inner">
+      <div class="section-title">
+        <h2 id="sponsors-title">Supported by<br>sponsors.</h2>
+        <p>We are grateful to the organizations that help sustain OAuth2 Proxy.</p>
+      </div>
+      <div class="sponsor-groups">
+        <div class="sponsor-group sponsor-group-current">
+          <p class="sponsor-label">Current sponsor</p>
+          <div class="sponsor-card">
+            <a href="https://www.sap.com/" target="_blank" rel="noreferrer" aria-label="Visit SAP's website">
+              <img src="{{ "images/sponsors/sap.png" | relURL }}" alt="SAP">
+            </a>
+          </div>
+        </div>
+        <div class="sponsor-group">
+          <p class="sponsor-label">Former and one-time sponsors</p>
+          <div class="sponsor-card sponsor-card-former">
+            <a href="https://www.microsoft.com/" target="_blank" rel="noreferrer" aria-label="Visit Microsoft's website">
+              <img src="{{ "images/sponsors/microsoft.png" | relURL }}" alt="Microsoft">
+            </a>
+            <a href="https://www.siemens.com/" target="_blank" rel="noreferrer" aria-label="Visit Siemens' website">
+              <img src="{{ "images/sponsors/siemens.png" | relURL }}" alt="Siemens">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script>
     (() => {
       const localTime = document.querySelector("[data-community-call-time]");
