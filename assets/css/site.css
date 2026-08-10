@@ -367,11 +367,28 @@ p {
   font-size: clamp(48px, 6vw, 76px);
   letter-spacing: -0.07em;
 }
-.page-hero p:last-child {
+.page-hero > p:not(.eyebrow) {
   max-width: 600px;
   margin: 0;
   font-size: 18px;
   line-height: 1.6;
+}
+.rss-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.rss-link:hover {
+  color: var(--blue);
+  background: #fff;
 }
 .article-list,
 .article {

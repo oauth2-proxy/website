@@ -6,6 +6,11 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
     <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
     <link rel="icon" href="{{ "images/oauth2-proxy-icon-color.png" | relURL }}" type="image/png">
+    {{ if and .IsSection (in (slice "announcements" "blog") .Section) }}
+      {{ with .OutputFormats.Get "RSS" }}
+        <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Title }} RSS feed" href="{{ .RelPermalink }}">
+      {{ end }}
+    {{ end }}
     {{ with resources.Get "css/site.css" | fingerprint }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ end }}

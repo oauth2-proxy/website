@@ -3,6 +3,13 @@ locale: en-US
 title: OAuth2 Proxy
 enableRobotsTXT: true
 
+# Publish RSS feeds for section landing pages, including /announcements/index.xml
+# and /blog/index.xml.
+outputs:
+  section:
+    - HTML
+    - RSS
+
 params:
   description: A reverse proxy and static file server that provides authentication using OAuth 2.0 and OpenID Connect.
 

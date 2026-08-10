@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <section class="page-hero"><p class="eyebrow">OAUTH2 PROXY</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p></section>
+  <section class="page-hero"><p class="eyebrow">OAUTH2 PROXY</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p>{{ if and .IsSection (in (slice "announcements" "blog") .Section) }}{{ with .OutputFormats.Get "RSS" }}<a class="rss-link" href="{{ .RelPermalink }}" title="Subscribe to the {{ $.Title }} RSS feed">Subscribe via RSS <span aria-hidden="true">↗</span></a>{{ end }}{{ end }}</section>
   <section class="article-list">
     {{ range .Pages.ByDate.Reverse }}
       {{ $authorURL := .Params.author_url }}{{ $authorAvatar := .Params.author_avatar }}
