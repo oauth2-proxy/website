@@ -1,0 +1,5 @@
+Contact: mailto:security@oauth2-proxy.dev
+Preferred-Languages: en
+Policy: https://github.com/oauth2-proxy/oauth2-proxy/blob/master/SECURITY.md
+Canonical: https://www.oauth2-proxy.dev/.well-known/security.txt
+Expires: 2036-09-13T00:00:00.000Z
