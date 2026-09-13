@@ -4,6 +4,8 @@ date: 2026-09-02
 summary: "A recap of our first monthly community call, including updates on v8, project priorities, and the slides. Our next call is on October 7th."
 ---
 
+![OAuth2 Proxy character](/images/character/oauth2-proxy-gratitude.png)
+
 Thank you to everyone who joined our first monthly community call on September 2. It was great to connect with users and contributors to discuss where OAuth2 Proxy stands today and where it is headed next.
 
 You can view the full [presentation slides on Google Slides](https://docs.google.com/presentation/d/1Scz3xwwZUrjDKon8wL8fL4UagcMlqJl3mLC_j3Lrb-I/edit?usp=sharing).
@@ -40,4 +42,3 @@ Our next community call will take place on **October 7, 2026, from 13:00 to 14:0
 - 18:30-19:30 IST
 
 [Join the next community call](https://meet.google.com/dqw-zngc-xir) to ask questions, share how you use OAuth2 Proxy, or get involved.
-
